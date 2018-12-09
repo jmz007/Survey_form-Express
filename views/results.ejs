@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Submitted Information</h1>
+    </div>
+    <div class="container2">
+        <h3>Your Opinion has been discarded</h3>
+        <ul>
+            <li>Name: <%= results.name %></li>
+            <li>Dojo Location: <%= results.location %></li>
+            <li>Favorite Language: <%= results.language %></li>
+            <li>Comment: <%= results.comment %></li>
+        </ul>
+        <button><a href="/"><h3>Go Back</h3></a></button>
+    </div>
+</body>
+</html>

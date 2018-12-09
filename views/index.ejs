@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Dojo survey</h1>
+        <h2>MANDATORY</h2>
+    </div>
+    <div class="container">
+        <form class="survey" action="/results" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" name="name"><br>
+            <label for="location">Dojo Location:</label>
+            <select name="location">
+                <option value="san jose">San Jose, Ca.</option>
+                <option value="seattle">Seattle, Wa.</option>
+                <option value="la">Los Angeles, Ca.</option>
+                <option value="dallas">Dallas, Tx.</option>
+                <option value="tc">Tyson's Corner, Va.</option>
+                <option value="chicago">Chicago, Il.</option>
+                <option value="tulsa">Tulsa, not-Ok.</option>
+                <option value="berkeley">Berkeley, Ca.</option>
+                <option value="boise">Boise, Id.</option>
+                <option value="oc">Orange County, Ca.</option>
+            </select>
+            <label for="language">Favorite Language:</label>
+            <select name="language">
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <option value="cplusplus">C++</option>
+                <option value="csharp">C#</option>
+                <option value="php">PHP</option>
+                <option value="perl">Perl</option>
+                <option value="swift">Swift</option>
+                <option value="r">R</option>
+                <option value="rust">Rust</option>
+            </select>
+            <label for="comment">Comment (Optional):</label>
+            <textarea name="comment"></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
